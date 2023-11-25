@@ -33,7 +33,7 @@ public:
 	//Interface for printing the data
 	void display() const;
 
-}
+};
 
 
 #endif // !EVENTDETAILS_H

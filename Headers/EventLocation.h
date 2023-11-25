@@ -1,41 +1,38 @@
-#pragma once
+
 #ifndef EVENTLOCATION_H
 #define EVENTLOCATION_H
 
 #include<iostream>
-#include<string>
-
-using namespace std;
+#include<cstring>
 
 class EventLocation {
 
 private:
-	const int MAX_ROWS = 10;
-	const int MAX_SEATS_ON_ROW = 20;
-	static int totalLocations;
-
-	char* locationName;
-	int* seatsOnRow;
+    char* locationName;
+    int maxSeats;
+    int numRows;
+    int* seatsPerRow;
 
 public:
-	EventLocation();
-	EventLocation(const char* name, const int* seats);
-	~EventLocation();
-	EventLocation(const EventLocation& other);
-	EventLocation& operator=(const EventLocation& other);
+    static const int MAX_NAME_LENGTH = 50;
 
-	//access methods
-	const char* getLocationName() const;
-	const int* getSeatsOnRow() const;
-	static int getTotalLocations();
+    EventLocation(const char* name, int maxSeats, int numRows, const int* seatsPerRow);
+    EventLocation(const EventLocation& other);
+    ~EventLocation();
 
-	//mutator methods
-	void displayLocation() const;
+    // Public interface for reading values
+    const char* getLocationName() const;
+    int getMaxSeats() const;
+    int getNumRows() const;
+    const int* getSeatsPerRow() const;
 
+    // Public interface for writing values
+    void setLocationName(const char* name);
+    void setMaxSeats(int seats);
+    void setNumRows(int rows);
+
+    // Display method
+    void display() const;
 };
-
-//overload
-ostream& operator<<(ostream& os, const EventLocation& location);
-istream& operator>>(istream& is, EventLocation& location);
 
 #endif // !EVENTLOCATION_H

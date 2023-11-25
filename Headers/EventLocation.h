@@ -1,4 +1,4 @@
-
+#pragma once
 #ifndef EVENTLOCATION_H
 #define EVENTLOCATION_H
 
@@ -30,6 +30,7 @@ public:
     void setLocationName(const char* name);
     void setMaxSeats(int seats);
     void setNumRows(int rows);
+    void setSeatsPerRow(const int* seatsPerRow);
 
     // Display method
     void display() const;

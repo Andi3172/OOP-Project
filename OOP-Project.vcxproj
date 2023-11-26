@@ -78,7 +78,7 @@
     <ClCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>$(ProjectDir)\Headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OOP Proj\OOP-Project\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -89,7 +89,7 @@
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>$(ProjectDir)\Headers</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\OOP Proj\OOP-Project\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -121,13 +121,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EventDetails.cpp" />
+    <ClCompile Include="Mains\EventDetails.cpp" />
     <ClCompile Include="mains\EventLocation.cpp" />
     <ClCompile Include="mains\mainTest.cpp" />
+    <ClCompile Include="Mains\Ticket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\EventDetails.h" />
     <ClInclude Include="headers\EventLocation.h" />
+    <ClInclude Include="Headers\Ticket.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

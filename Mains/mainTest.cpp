@@ -2,7 +2,7 @@
 #include "EventDetails.h"
 #include <iostream>
 
-int main() {
+/*int main() {
     // Example usage of EventLocation
     const int numRows = 5;
     const int seatsPerRow[numRows] = { 10, 15, 20, 15, 10 };
@@ -27,4 +27,38 @@ int main() {
     std::cout << "\n";
 
     return 0;
+}*/
+
+#include "EventLocation.h"
+#include "EventDetails.h"
+#include "Ticket.h"
+#include <iostream>
+
+int main() {
+    // Create an EventLocation
+    const char* locationName = "Example Venue";
+    int maxSeats = 100;
+    int numRows = 10;
+    const int seatsPerRow[] = { 10, 12, 15, 15, 12, 10, 8, 8, 12, 10 };
+
+    EventLocation exampleLocation(locationName, maxSeats, numRows, seatsPerRow);
+
+    // Create an EventDetails
+    const char* eventName = "Concert";
+    const char* eventDate = "2023-12-01";
+    const char* eventTime = "18:00";
+
+    EventDetails exampleDetails(eventName, eventDate, eventTime);
+
+    // Generate a Ticket
+    Ticket::TicketType ticketType = Ticket::TicketType::VIP;
+
+    Ticket exampleTicket(ticketType, exampleLocation, exampleDetails);
+
+    // Display Ticket information
+    std::cout << "Generated Ticket Information:\n";
+    exampleTicket.display();
+
+    return 0;
 }
+

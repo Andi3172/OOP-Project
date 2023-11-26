@@ -21,12 +21,21 @@
     <ClCompile Include="mains\mainTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Mains\Ticket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mains\EventDetails.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\EventDetails.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\EventLocation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Ticket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

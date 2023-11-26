@@ -104,6 +104,7 @@ void Ticket::display() const
 	std::cout << "Ticket ID: " << ticketID << std::endl;
 	std::cout << "Ticket Type: " << getTicketTypeString() << std::endl;
 	std::cout << "Event Location: " << eventLocation->getLocationName() << std::endl;
+	std::cout << "Event Name: " << eventDetails->getEventName() << std::endl;
 	std::cout << "Event Date: " << eventDetails->getEventDate() << std::endl;
 	std::cout << "Event Time: " << eventDetails->getEventTime() << std::endl;
 }

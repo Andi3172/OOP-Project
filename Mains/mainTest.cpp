@@ -36,7 +36,7 @@
 
 int main() {
     // Create an EventLocation
-    const char* locationName = "Example Venue";
+    const char* locationName = "Arenele Romane";
     int maxSeats = 100;
     int numRows = 10;
     const int seatsPerRow[] = { 10, 12, 15, 15, 12, 10, 8, 8, 12, 10 };
